@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
+	<title>Home Tutor</title>
+</head>
+
+<body>
+	<script src="index.js"></script>
+	<script src="teach-reg.js"></script>
+	<div class="page-wrape">
+		<div class="position-relative">
+			<head-banner>/</head-banner>
+			<div class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-10 text-center">
+							<h1><strong>Tutor Enrollment</strong></h1>
+						</div>
+					</div>
+					<br>
+					<h2>Hey TUTOR! Enroll yourself below and get started, <b>STUDENTS ARE WAITING...</b></h2>
+				</div>
+			</div>
+			<br>
+			<br>
+			<section class="gradient-custom">
+				<div class="container py-5 h-100">
+					<div class="row justify-content-center align-items-center h-100">
+						<div class="col-12 col-lg-9 col-xl-7">
+							<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+								<div class="card-body p-4 p-md-5">
+									<h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+									<form id="reg-form" onsubmit="registerTeacher(); return false">
+										<div class="row">
+											<div class="col-md-6 mb-4">
+												<div class="form-outline">
+													<input type="text" required id="firstName"
+														class="form-control form-control-lg" />
+													<label class="form-label" for="firstName">First Name</label>
+												</div>
+											</div>
+											<div class="col-md-6 mb-4">
+												<div class="form-outline">
+													<input type="text" required id="lastName"
+														class="form-control form-control-lg" />
+													<label class="form-label" for="lastName">Last Name</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 mb-4 d-flex align-items-center">
+												<div class="form-outline datepicker w-100">
+													<input type="date" max='2001-01-01' required
+														class="form-control form-control-lg" id="birthdayDate" />
+													<label for="birthdayDate" class="form-label">Birthday</label>
+												</div>
+											</div>
+											<fieldset id="gender" required class="col-md-6 mb-4">
+												<h6 class="mb-2 pb-1">Gender: </h6>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="gender"
+														id="femaleGender" value="Female" checked />
+													<label class="form-check-label" for="femaleGender">Female</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="gender"
+														id="maleGender" value="Male" />
+													<label class="form-check-label" for="maleGender">Male</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="gender"
+														id="otherGender" value="Other" />
+													<label class="form-check-label" for="otherGender">Other</label>
+												</div>
+											</fieldset>
+										</div>
+										<div class="row">
+											<div class="col-md-6 mb-4 pb-2">
+												<div class="form-outline">
+													<input type="email" required id="email"
+														class="form-control form-control-lg" />
+													<label class="form-label" for="email">Email</label>
+												</div>
+											</div>
+											<div class="col-md-6 mb-4 pb-2">
+												<div class="form-outline">
+													<input type="tel" id="mobile" required
+														class="form-control form-control-lg" />
+													<label class="form-label" for="mobile">Phone Number</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 mb-4 pb-2">
+												<div style="padding: 0;" class="col-12">
+													<select id="subject" required
+														class="select form-outline form-control-lg">
+														<option value="1" disabled>Choose option</option>
+														<option value="Mathematics">Mathematics</option>
+														<option value="History">History</option>
+														<option value="Programming">Programming</option>
+														<option value="Art">Art</option>
+														<option value="Music">Music</option>
+														<option value="Chemistry">Chemistry</option>
+														<option value="Languages">Languages</option>
+														<option value="Physics">Physics</option>
+													</select>
+												</div>
+												<label class="form-label select-label">Choose Subject</label>
+											</div>
+											<div class="col-md-6 mb-4 pb-2">
+												<div class="form-outline">
+													<input type="number" id="experience" required
+														class="form-control form-control-lg" />
+													<label class="form-label" for="experience">Experience(in
+														years)</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 mb-4 pb-2">
+												<div class="form-outline">
+													<input type="text" id="address" required
+														class="form-control form-control-lg" />
+													<label class="form-label" for="address">City (Address)</label>
+												</div>
+											</div>
+										</div>
+										<br>
+										<div class="mt-4 pt-2">
+											<input class="btn btn-success" type="submit" value="Submit" />
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer-component></footer-component>
+		</div>
+	</div>
+</body>
+
+</html>

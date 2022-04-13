@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Bootstrap CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+	<title>Home Tutor</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+	<script src="teach-reg.js"></script>
+	<script src="index.js"></script>
+	<head-banner>/</head-banner>
+	<div class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
+		<div class="container">
+			<br>
+			<h2>Find your perfect <b>TUTOR</b> below....</h2>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+
+		<div id="teachers" class="col-md-12">
+			<div style="display: flex; align-items: center; margin-bottom: 20px;" class="input-group">
+				<input id="search-input" type="search" class="form-control rounded" placeholder="Search"
+					aria-label="Search" aria-describedby="search-addon" />
+				&nbsp;
+				<button id="sBtn" type="button" class="btn btn-xs fs-10 btn-bold btn-warning"
+					onclick="searchTeacher()">search</button>
+			</div>
+		</div>
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item active">
+					<a class="page-link" href="#">1</a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">4</a></li>
+				<li class="page-item"><a class="page-link" href="#">5</a></li>
+			</ul>
+		</nav>
+		<br />
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			...
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	  
+	
+	<footer-component></footer-component>
+</body>
+
+</html>
