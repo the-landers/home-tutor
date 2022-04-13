@@ -81,16 +81,17 @@ class FooterComponent extends HTMLElement {
                 <div class="col-md-6 col-lg-3 mb-5">
                     <h6 class="mb-4 font-weight-bold">Group Name</h6>
                     <ul class="list-unstyled bb m-0">
-                        <li><a href="">For Individuals</a></li>
+                        <li><a href="">The Landers</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-5">
                     <h6 class="mb-4 font-weight-bold">Group Member</h6>
                     <ul class="list-unstyled bb m-0">
-                        <li><a href="">John doe 1</a></li>
-                        <li><a href="">John doe 2</a></li>
-                        <li><a href="">John doe 3</a></li>
-                        <li><a href="">John doe 4</a></li>
+                        <li><a href="">Muskan Jeryal</a></li>
+                        <li><a href="">Loveneet Kaur</a></li>
+                        <li><a href="">Devinderpal Singh</a></li>
+                        <li><a href="">Sukhpal Singh</a></li>
+                        <li><a href="">Deekshay Sethi</a></li>
                     </ul>
                 </div>
             </div>
